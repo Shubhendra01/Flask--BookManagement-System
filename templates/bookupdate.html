@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 style="text-align: center;"><B></B></h3>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <form action="/bookupdate" method="post">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><B>UPDATE A BOOK</B></td>
+                        </tr>
+                        <tr>
+                            <td>Book name</td>
+                            <td><input name="mobile" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-dark">UPDATE</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

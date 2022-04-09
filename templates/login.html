@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container container">
+
+        <div class="row">
+            <dic class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+              <form action="/login" method="POST">
+                <table class="table table-borderless">
+
+                      <h3 style="text-align: center;"><B>Welcome to admin page</B></h3>
+
+                  <tr>
+                      <td>Username</td>
+                      <td><input name="logusername" type="text" id="username" class="form-control"></td>
+                  </tr>
+                  <tr>
+                      <td>Password</td>
+                      <td><input name="logpassword" type="password" name="" id="password" class="form-control"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td><button class="btn btn-success">LOGIN</button></td>
+                  </tr>
+              </table>
+              </form>
+            </dic>
+        </div>
+    </div>
+{% endblock %}

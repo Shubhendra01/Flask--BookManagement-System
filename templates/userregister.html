@@ -1,0 +1,48 @@
+{% extends "base3.html" %}
+{% block content %}
+ <div class="container container">
+
+        <div class="row">
+            <dic class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <form action="/userregister" method="post">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><B>REGISTER A USER</B></td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input name ="name" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input name ="address" type="text" class="form-control" ></input></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input name ="email" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td><input name ="phnnumber" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input name="pwd" type="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Confrim password</td>
+                        <td><input name="cfnpwd" type="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type ="submit" class="btn btn-primary">REGISTER</button></td>
+                    </tr>
+                </table>
+                <a href="/user">Back to login</a>
+            </form>
+            </dic>
+        </div>
+    </div>
+
+
+{% endblock %}

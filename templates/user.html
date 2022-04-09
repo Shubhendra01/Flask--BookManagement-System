@@ -1,0 +1,31 @@
+{% extends "base3.html" %}
+{% block content %}
+<div class="container container">
+
+    <div class="row">
+        <dic class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <form action="/user" method="POST">
+            <table class="table table-borderless">
+
+                  <h3 style="text-align: center;"><B>Welcome to User page</B></h3>
+
+              <tr>
+                  <td>Email id</td>
+                  <td><input name="email" type="text" id="email" class="form-control"></td>
+              </tr>
+              <tr>
+                  <td>Password</td>
+                  <td><input name="pass" type="password" id="password" class="form-control"></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td><button class="btn btn-success">LOGIN</button></td>
+              </tr>
+          </table>
+          <a href="/userregister">Create a new account</a>
+          </form>
+        </dic>
+    </div>
+</div>
+
+{% endblock %}

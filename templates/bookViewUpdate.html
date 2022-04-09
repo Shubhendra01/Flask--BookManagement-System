@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <form action="/bookviewupdate" method="post">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><B>REGISTER A BOOK</B></td>
+                    </tr>
+                    <tr>
+                        <td>Book name</td>
+                        <td><input name ="bookname" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Author</td>
+                        <td><textarea name ="author" type="text" class="form-control" style="height: 200px;width:190px ;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td><input name ="category" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td><input name ="price" type="number" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Publisher</td>
+                        <td><input name="publisher" type="date" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input name="pwd" type="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Confrom password</td>
+                        <td><input name="cfnpwd" type="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type ="submit" class="btn btn-primary">UPDATE</button></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container container">
+
+        <div class="row">
+            <dic class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <form action="/bookentry" method="post">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><B>REGISTER A BOOK</B></td>
+                    </tr>
+                    <tr>
+                        <td>Book name</td>
+                        <td><input name ="bookname" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Author</td>
+                        <td><input name ="author" type="text" class="form-control"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td><input name ="category" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td><input name ="price" type="number" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Publisher</td>
+                        <td><input name="publisher" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input name="pwd" type="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type ="submit" class="btn btn-primary">REGISTER</button></td>
+                    </tr>
+                </table>
+            </form>
+            </dic>
+        </div>
+    </div>
+{% endblock %}
